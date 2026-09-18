@@ -1,0 +1,476 @@
+*{
+    html{
+    scroll-behavior:smooth;
+}
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    background:#d7e2cf;
+    color:#234329;
+}
+
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(255,250,238,.55),
+        rgba(255,250,238,.75)),
+        url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+..overlay{
+
+    background:#d7e2cf;
+
+    width:700px;
+
+    max-width:95%;
+
+    padding:70px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+.overlay h3{
+    letter-spacing:8px;
+    color:#4e6d43;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.overlay h1{
+    font-size:74px;
+    color:#2d5d39;
+    font-family:"Cormorant Garamond",serif;
+    line-height:1.1;
+}
+
+.overlay h2{
+    font-size:52px;
+    margin-bottom:15px;
+    color:#355c39;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.overlay p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+.hero-photo{
+
+    width:320px;
+
+    height:480px;
+
+    display:block;
+
+    margin:25px auto 35px;
+
+    object-fit:cover;
+
+    object-position:center 22%;
+
+    border:8px solid #9caf88;
+
+    border-radius:150px 150px 30px 30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    transition:.3s ease;
+}
+
+
+.button{
+    display:inline-block;
+    background:#4b7a45;
+    color:#ffffff;
+    padding:18px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:600;
+    letter-spacing:1px;
+    box-shadow:0 12px 25px rgba(63,109,63,.35);
+    transition:.35s ease;
+}
+
+.button:visited{
+    color:#ffffff;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    background:#2d5632;
+}
+
+#details{
+    background:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+#details h2{
+    font-size:60px;
+    color:#2d5632;
+    margin-bottom:25px;
+    font-family:"Playfair Display",serif;
+}
+
+#details p{
+    font-size:22px;
+    margin:12px 0;
+}
+
+.section-label{
+    text-transform:uppercase;
+    letter-spacing:5px;
+    color:#4b7a45;
+    font-size:15px;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.countdown-container{
+    margin-top:100px;
+}.time-box{
+    background:#ffffff;
+    border:2px solid #d4af37;
+    border-radius:20px;
+    width:125px;
+    padding:25px 15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+
+}.time-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+}
+#countdown{
+  display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.time-box span{
+    display:block;
+    font-size:42px;
+    font-weight:700;
+    color:#2d5632;
+    font-family:"Playfair Display",serif;
+}
+.time-box small{
+    display:block;
+    margin-top:8px;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#4b7a45;
+}
+.gift-note{
+    margin-top:120px;
+    max-width:650px;
+    margin-left:auto;
+    margin-right:auto;
+    background:#fffdf8;
+    border:2px solid #d4af37;
+    border-radius:24px;
+    padding:45px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.gift-note h3{
+    font-size:38px;
+    color:#2d5632;
+    margin-bottom:25px;
+    font-family:"Playfair Display", serif;
+}
+
+.gift-note p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.gift-note strong{
+    color:#2d5632;
+}
+.footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#4b7a45;
+    font-size:18px;
+}
+/* RSVP Section */
+
+#rsvp{
+    padding:100px 20px;
+    text-align:center;
+    background:#fdfaf3;
+
+    max-width:900px;
+    margin:80px auto;
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+#rsvp h2{
+    font-size:48px;
+    color:#2d5632;
+    font-family:"Cormorant Garamond", serif;
+    margin-bottom:15px;
+}
+
+.rsvp-text{
+    font-size:22px;
+    color:#234329;
+    margin-bottom:40px;
+}
+
+.rsvp-buttons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.rsvp-btn{
+    display:inline-block;
+    min-width:280px;
+    padding:20px;
+    border-radius:16px;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.yes{
+    background:#4b7a45;
+    color:white;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.yes:hover{
+    background:#2d5632;
+    transform:translateY(-4px);
+}
+
+.no{
+    background:white;
+    color:#2d5632;
+    border:2px solid #d4af37;
+}
+
+.no:hover{
+    background:#f7f3ea;
+    transform:translateY(-4px);
+}
+
+.footer{
+    text-align:center;
+    padding:40px 20px;
+    color:#4b7a45;
+    font-size:18px;
+}
+html{
+    scroll-behavior:smooth;
+}
+.hero .overlay{
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.gift-note:hover,
+.time-box:hover,
+.rsvp-btn:hover{
+    transform:translateY(-6px);
+    transition:.3s;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* ===== Baby Jungle Animals ===== */
+
+.overlay{
+    position:relative;
+}
+
+.monkey,
+.giraffe,
+.lion,
+.elephant,
+.tiger{
+    position:absolute;
+    z-index:5;
+    width:100px;
+    height:auto;
+}
+
+/* Monkey - top left */
+.monkey{
+    top:-08px;
+    left:-20px;
+}
+
+/* Giraffe - top right */
+.giraffe{
+    top:-10px;
+    right:-20px;
+}
+
+/* Lion - lower left */
+.lion{
+    bottom:80px;
+    left:-25px;
+}
+
+/* Elephant - lower right */
+.elephant{
+    bottom:80px;
+    right:-25px;
+}
+
+/* Tiger - bottom center */
+.tiger{
+    bottom:-35px;
+    left:50%;
+    transform:translateX(-50%);
+    width:85px;
+}
+
+/* Small animation */
+.monkey:hover,
+.giraffe:hover,
+.lion:hover,
+.elephant:hover,
+.tiger:hover{
+    transform:scale(1.08);
+}.lion{
+    width:100px;
+    bottom:80px;
+    left:20px;
+}.elephant{
+    width:100px;
+    bottom:80px;
+    right:20px;
+}.tiger{
+    width:90px;
+    bottom:-20px;
+    left:50%;
+    transform:translateX(-50%);
+}.
+
+
+.hero{
+   min-height:100vh;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.45) 0 35px, transparent 36px),
+        radial-gradient(circle at 85% 25%, rgba(255,255,255,.35) 0 45px, transparent 46px),
+        linear-gradient(135deg, #cddbc5, #edf0df);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    position:relative;
+    overflow:hidden;
+}body{
+    background:#d7e2cf;
+}
+
+#details{
+    background:#d7e2cf;
+}
+
+#rsvp{
+    background:#d7e2cf;
+}.overlay{
+    background:
+        radial-gradient(circle at 10% 15%, rgba(212,175,55,.25) 0 7px, transparent 8px),
+        radial-gradient(circle at 90% 12%, rgba(75,122,69,.18) 0 10px, transparent 11px),
+        radial-gradient(circle at 8% 85%, rgba(212,175,55,.20) 0 6px, transparent 7px),
+        radial-gradient(circle at 92% 82%, rgba(75,122,69,.18) 0 9px, transparent 10px),
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,.45) 0 18px, transparent 19px),
+        radial-gradient(circle at 80% 55%, rgba(255,255,255,.35) 0 25px, transparent 26px),
+        linear-gradient(135deg,#d7e2cf,#edf1e5,#dfe8d8);
+    width:700px;
+    max-width:95%;
+    padding:70px;
+    border-radius:28px;
+    text-align:center;
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}/* 🌿 NUEVO FONDO BABY JUNGLE - SIN ÁRBOLES */
+
+.hero{
+    background:
+        radial-gradient(circle at 8% 15%, rgba(255,255,255,.55) 0 35px, transparent 36px),
+        radial-gradient(circle at 92% 18%, rgba(212,175,55,.25) 0 9px, transparent 10px),
+        radial-gradient(circle at 12% 82%, rgba(255,255,255,.45) 0 25px, transparent 26px),
+        radial-gradient(circle at 88% 80%, rgba(212,175,55,.20) 0 7px, transparent 8px),
+        radial-gradient(circle at 50% 10%, rgba(255,255,255,.35) 0 50px, transparent 51px),
+        linear-gradient(135deg,#cbd9c3,#e9eddf,#d8e3d1);
+
+    background-size:
+        auto,
+        auto,
+        auto,
+        auto,
+        auto,
+        cover;
+
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+    overflow:hidden;
+}
+
+/* 🌱 Hojitas decorativas suaves */
+.hero::before{
+    content:"🌿";
+    position:absolute;
+    top:25px;
+    left:25px;
+    font-size:75px;
+    opacity:.35;
+    transform:rotate(-20deg);
+}
+
+.hero::after{
+    content:"🌿";
+    position:absolute;
+    bottom:20px;
+    right:25px;
+    font-size:75px;
+    opacity:.35;
+    transform:rotate(20deg);
+}
