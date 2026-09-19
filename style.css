@@ -438,3 +438,68 @@ body {
         font-size: 15px;
     }
 }
+
+
+/* Letter to Ziad */
+.ziad-letter {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.ziad-letter-inner {
+    background: #fffdf8;
+    border: 2px solid #d4af37;
+    border-radius: 28px;
+    padding: 55px 60px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.ziad-letter-inner .section-label {
+    font-family: "Cormorant Garamond", serif;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-size: 34px;
+    color: #2d5632;
+    margin-bottom: 30px;
+}
+
+.ziad-letter-inner p:not(.section-label) {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #3f4f3d;
+    margin: 0 auto 20px;
+    max-width: 680px;
+}
+
+.ziad-letter-inner .wild-line {
+    color: #2d5632;
+    margin-top: 28px;
+}
+
+.ziad-letter-inner .signature {
+    margin-top: 32px;
+    color: #4b7a45;
+}
+
+@media (max-width: 600px) {
+    .ziad-letter {
+        margin: 45px auto;
+        padding: 15px;
+    }
+
+    .ziad-letter-inner {
+        padding: 35px 22px;
+        border-radius: 22px;
+    }
+
+    .ziad-letter-inner .section-label {
+        font-size: 29px;
+    }
+
+    .ziad-letter-inner p:not(.section-label) {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+}
