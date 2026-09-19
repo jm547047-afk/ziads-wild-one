@@ -9,10 +9,10 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("days").textContent = days;
-    document.getElementById("hours").textContent = hours;
-    document.getElyementById("minutes").textContent = minutes;
-    document.getElementById("seconds").textContent = seconds;
+    document.getElementById("days").textContent = Math.max(0, days);
+    document.getElementById("hours").textContent = Math.max(0, hours);
+    document.getElementById("minutes").textContent = Math.max(0, minutes);
+    document.getElementById("seconds").textContent = Math.max(0, seconds);
 }
 
 updateCountdown();
